@@ -4,11 +4,9 @@ on:
   push:
     branches:
         - main
-        - master
   pull_request:
-    branches:
+      branches:
         - main
-        - master
   workflow_dispatch:
 
 jobs:
@@ -21,3 +19,4 @@ jobs:
       - name: show files
         run: |
           ls -ltr
+
